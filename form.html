@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        form {
+            background-color: white;
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 48%;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <h2>Registration Form</h2>
+
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Mobile:</label>
+    <input type="tel" placeholder="Enter mobile number" required>
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter email" required>
+
+    <p>Gender:</p>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+
+    <p>Hobbies:</p>
+    <input type="checkbox"> Reading
+    <input type="checkbox"> Music
+
+    <br><br>
+
+    <label>Course:</label>
+    <select>
+        <option>Select Course</option>
+        <option>B.Tech</option>
+        <option>BCA</option>
+        <option>MCA</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
